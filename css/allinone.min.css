@@ -56,7 +56,7 @@ a {
 	word-break: break-all;
 	background-color: transparent;
 	text-decoration: none;
-	color: #26A8EB
+	color: #6667AB
 }
 
 a:active,
@@ -2305,7 +2305,7 @@ em {
 .markdown-body blockquote {
 	margin: 2em 0;
 	padding: 20px 0 20px 20px;
-	border-left: 4px solid #26A8EB
+	border-left: 4px solid #714288
 }
 
 .markdown-body blockquote p {
