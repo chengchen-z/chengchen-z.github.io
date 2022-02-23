@@ -10,16 +10,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>归档 | Chengchen</title>
+	<title>算法整理（一）：动态规划 | Chengchen</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<meta name="generator" content="hexo">
 	<meta name="author" content="Cheng chen">
-	<meta name="description" content="对一切的一切，永葆好奇之心">
+	<meta name="description" content="动态规划">
 
 	
-	<meta name="keywords" content="hexo, 算法, 尝试中, 自然语言处理">
+	<meta name="keywords" content="算法">
 	
 
 	
@@ -39,24 +39,26 @@
 	
 
 	<meta property="og:site_name" content="Chengchen">
-	<meta property="og:type" content="blog">
-	<meta property="og:title" content="归档 | Chengchen">
-	<meta property="og:description" content="对一切的一切，永葆好奇之心">
-	<meta property="og:url" content="https://chengchen-z.github.io/archives/2022/index.html">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="算法整理（一）：动态规划 | Chengchen">
+	<meta property="og:description" content="动态规划">
+	<meta property="og:url" content="https://chengchen-z.github.io/2022/02/24/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
 
 	
+	<meta property="article:published_time" content="2022-02-23T17:02:00+08:00"> 
+	<meta property="article:author" content="Cheng chen">
+	<meta property="article:published_first" content="Chengchen, /2022/02/24/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+	
 </head>
-<body class="tag-template">
+<body class="post-template">
 	<div class="site-wrapper">
 		
 
 
 
 
-<header class="site-header outer " style="background-image: url(https://mubai.oss-cn-hangzhou.aliyuncs.com/background.jpg)">
+<header class="site-header outer" style="z-index: 999">
     <div class="inner">
-        
-        
         
 <nav class="site-nav"> 
     <div class="site-nav-left">
@@ -129,136 +131,73 @@
 </div>
     </div>
 </nav>
-        
-        <div class="site-header-content">
-            
-            <h1 class="site-title">
-                归档
-            </h1>
-            <h2 class="site-description">共 2 篇</h2>
-        </div>
-        
-        
     </div>
 </header>
 
 
 <main id="site-main" class="site-main outer" role="main">
-	<div class="inner">
-		<div class="post-feed">
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="算法整理（一）：动态规划" href="/2022/02/24/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
-					<div class="post-card-image b-lazy" data-src="https://s2.loli.net/2022/02/23/tGlWwu6dLCN7vpR.jpg"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="算法整理（一）：动态规划" href="/2022/02/24/%E7%AE%97%E6%B3%95%E6%95%B4%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								算法
-								| 
-								
-								<time datetime="2022-02-23T17:16:31.000Z" itemprop="datePublished">
-									2022-02-23
-								</time>
-							</span>
-							<h2 class="post-card-title">算法整理（一）：动态规划</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								cover_img:     # 在文章摘要上显示feature_img:   # 在文章详细页面上置顶description:   # 文章描述keywords:      # 关键字
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2022-02-23T17:16:31.000Z" itemprop="datePublished">
+                    2022-02-23
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">算法整理（一）：动态规划</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://s2.loli.net/2022/02/23/tGlWwu6dLCN7vpR.jpg)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>cover_img:     # 在文章摘要上显示<br>feature_img:   # 在文章详细页面上置顶<br>description:   # 文章描述<br>keywords:      # 关键字</p>
 
-								
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Cheng chen</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://s2.loli.net/2022/02/23/dBjiXhEwzQtnKpG.jpg" alt="Cheng chen">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							0
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-			<article class="post-card post ">
-				
-				<a class="post-card-image-link" title="Hello World" href="/2022/02/08/hello-world/">
-					<div class="post-card-image b-lazy" data-src="https://s2.loli.net/2022/02/23/tGlWwu6dLCN7vpR.jpg"></div>
-				</a>
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="Hello World" href="/2022/02/08/hello-world/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								
-								hexo
-								| 
-								
-								<time datetime="2022-02-08T07:53:45.792Z" itemprop="datePublished">
-									2022-02-08
-								</time>
-							</span>
-							<h2 class="post-card-title">Hello World</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
-								...
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">Cheng chen</div>
-								
-								<a href="/about" class="static-avatar">
-									<img class="author-profile-image" src="https://s2.loli.net/2022/02/23/dBjiXhEwzQtnKpG.jpg" alt="Cheng chen">
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							1
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-		</div>
-	</div>
+                </div>
+            </section>
+        </article>
+    </div>
 
-	
-	
-	<nav class="pagination">
-		
-	</nav>
-	
-	
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Hello World" href="/2022/02/08/hello-world/">
+            Hello World →
+        </a>
+        
+    </nav>
+
+    
 </main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"></path></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"></path></svg>
+            <svg class="toc-close hide" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"></path><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"></path></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"></path></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        
+    </div>
+</div>
+
 
 
 	</div>
@@ -387,10 +326,50 @@
 
 
 
-<script src="/js/mix/home-lazy-local.min.js"></script>
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="Chengchen">
+			
+                <img src="https://s2.loli.net/2022/02/23/Ts28NjwcE1KGOy9.png" alt="Chengchen icon">
+			
+            <span>Chengchen</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">算法整理（一）：动态规划</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
 
 
 <script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
 
 
 
